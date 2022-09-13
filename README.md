@@ -1,24 +1,64 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Blog App
 
-Things you may want to cover:
+> This project is a ruby on rail blog application where users will be able to post, comments, like, edit and delete their post and it is being persisted in a RDBMS (postgresql).
 
-* Ruby version
 
-* System dependencies
+## Built With
 
-* Configuration
+- Major languages
+- Frameworks
+- Technologies used
 
-* Database creation
+## Live Demo (if available)
 
-* Database initialization
+[Live Demo Link](https://livedemo.com)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Getting Started
+To get a local copy up and running follow these simple example steps.
 
-* Deployment instructions
+### Prerequisites
+- Ruby
+- Ruby on rails
+- Any IDE of your choice
 
-* ...
+### Setup
+
+Clone this repository using this command in your shell:
+
+```
+Git clone https://github.com/bobb-Rob/blog_app_with_rails.git
+```
+
+### Install
+
+- Run ``` bundle install ```
+
+## Authors
+
+| 👤 Name | Github | Twitter | LinkedIn |
+|------|--------|---------|----------|
+|Robertson Akpan|[@bobb-rob](https://github.com/bobb-rob)|[@___Robertson](https://twitter.com/___Robertson)|[@RobertsonAkpan](https://www.linkedin.com/in/robertsonakpan/)|
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
