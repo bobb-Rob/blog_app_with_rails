@@ -19,7 +19,7 @@ RSpec.describe User, type: :model do
 
     it 'validate recent_posts method' do
       post_one = Post.new(author: @first_user, title: 'First post', text: 'First post by first user',
-                            comments_counter: 0, likes_counter: 0)
+                          comments_counter: 0, likes_counter: 0)
       post_one.save
       second_post = Post.new(author: @first_user, title: 'Second post', text: 'Second post by first user',
                              comments_counter: 0, likes_counter: 0)
