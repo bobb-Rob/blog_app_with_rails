@@ -41,7 +41,7 @@ RSpec.describe Post, type: :model do
       comment1.save
       comment2 = Comment.create(text: 'This is my second comment', post: @post, author: @first_user)
       comment2.save
-      expect(@post.five_recent_comments).to eq([comment1, comment2])
+      expect(@post.five_recent_comments).to eq([comment2, comment1])
     end
   end
 end
