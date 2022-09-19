@@ -1,1 +1,3 @@
-<h1>Hello from Post</h1>
+<% @posts.each do |post| %>
+<h1>Hello from <%= post.title %></h1>
+<% end %>
