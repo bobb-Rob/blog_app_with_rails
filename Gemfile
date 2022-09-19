@@ -46,6 +46,7 @@ gem 'bootsnap', require: false
 gem 'rubocop', '>= 1.0', '< 2.0'
 # Use Sass to process CSS
 # gem "sassc-rails"
+gem 'ffi', github: 'ffi/ffi', submodules: true
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
