@@ -3,9 +3,12 @@
   <div>
     <% @posts.each do |post| %>
       <%=render 'post', post: post %>
-      <% post.comments.each do |comment| %> 
-          <%=render 'shared/comment', comment: comment %>
-      <% end %>
+      <div class="my_border de_post_comments">
+        <% post.five_recent_comments.each do |comment| %> 
+            <%=render 'shared/comment', comment: comment %>
+        <% end %>
+      </div>
     <% end %>
-  </div>  
+  </div>
+  <%= button_tag 'Pagination', type: 'button', class: "btn pagination" %>
 </div>
