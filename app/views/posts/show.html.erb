@@ -19,12 +19,16 @@
 
   <%= button_to 'Like',
     user_post_likes_path(post_id: @post.id),
-    class: 'button-like'
+    class: 'create_btn my_border'
   %>
 
   <div class="my_border de_post_comments">
-    <% @post.comments.each do |comment| %> 
-          <%=render 'shared/comment', comment: comment %>
+    <% if @post.comments.empty? %>
+     <Span>No comment</span>
+    <% else  %>
+      <% @post.comments.each do |comment| %> 
+            <%=render 'shared/comment', comment: comment %>
+      <% end %>
     <% end %>
   </div>
   <%= render partial: 'shared/comment_form', locals: { post_id: @post.id, user_id: @current_user.id } %>   
