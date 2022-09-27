@@ -27,7 +27,7 @@ development:
   <<: *default
   database: blog_app_with_rails_development
   user: postgres
-  password: robert
+  password: kimutai
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -63,7 +63,7 @@ test:
   <<: *default
   database: blog_app_with_rails_test
   user: postgres
-  password: robert
+  password: kimutai
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -88,5 +88,5 @@ test:
 production:
   <<: *default
   database: blog_app_with_rails_production
-  username: blog_app_with_rails
-  password: <%= ENV["BLOG_APP_WITH_RAILS_DATABASE_PASSWORD"] %>
+  user: postgres
+  password: kimutai
