@@ -8,6 +8,6 @@ class User < ApplicationRecord
   validates :posts_counter, comparison: { greater_than_or_equal_to: 0 }
 
   def last_three_posts
-    posts.last(3).reverse
+    posts.includes(:author).last(3).reverse
   end
 end
