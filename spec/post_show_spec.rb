@@ -38,4 +38,10 @@ RSpec.describe "PostShow", type: :feature do
     expect(page).to have_content(comment.author.name)
   end
 
+  it 'shows the comment each comment author left' do    
+    comment = @post.comments.first
+    comment2 = @post.comments.last
+    expect(page).to have_content(comment.text)
+    expect(page).to have_content(comment2.text)
+  end
 end
